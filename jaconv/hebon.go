@@ -9,8 +9,8 @@ import (
 
 func ToHebon(kana string) string {
 	isOmitted := map[string]bool{
-		"aa": true, "ee": true, "ii": false, // i は連続しても省略しない
-		"oo": true, "ou": true, "uu": true,
+		"aa": false, "ee": false, "ii": false, // i は連続しても省略しない
+		"oo": false, "ou": false, "uu": false,
 	}
 
 	var hebon string
