@@ -1,7 +1,6 @@
 package jaconv
 
 import (
-	"strings"
 	"unicode/utf8"
 
 	"golang.org/x/exp/utf8string"
