@@ -25,10 +25,7 @@ func ToHebon(kana string) string {
 				ch.Hebon = "t"
 			}
 		} else if ch.Char == "ん" {
-			nextCh := charHebonByIndex(kana, i+1)
-			if nextCh.Hebon != "" {
-				ch.Hebon = "n"
-			}
+			ch.Hebon = "n"
 		} else if ch.Char == "ー" {
 			// 長音は無視
 			ch.Hebon = ""
