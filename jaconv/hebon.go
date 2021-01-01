@@ -92,7 +92,7 @@ func charHebonByIndex(kana string, index int) CharHebon {
 		"みゃ": "ya", "みゅ": "yu", "みょ": "yo",
 		"りゃ": "ya", "りゅ": "yu", "りょ": "yo",
 		"ぎゃ": "ya", "ぎゅ": "yu", "ぎょ": "yo",
-		"じゃ": "ja", "じゅ": "yu", "じょ": "yo",
+		"じゃ": "ya", "じゅ": "yu", "じょ": "yo",
 		"びゃ": "ya", "びゅ": "yu", "びょ": "yo",
 		"ぴゃ": "ya", "ぴゅ": "yu", "ぴょ": "yo",
 	}
