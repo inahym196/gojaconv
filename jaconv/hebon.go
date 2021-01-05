@@ -43,11 +43,11 @@ func ToHebon(kana string) []string {
 					ch.Hebon = "-"
 				}
 			}
-			hebon += ch.Hebon
+			hebon = append(hebon, ch.Hebon)
 		} else {
 			if ch.Char != "ー" {
 				// 変換できない文字の場合
-				hebon += ch.Char
+				//hebon += ch.Char
 			}
 		}
 
