@@ -63,7 +63,7 @@ func ToHebon(kana string) []string {
 
 type CharHebon struct {
 	Char  string
-	Hebon []string
+	Hebon string
 }
 
 func charHebonByIndex(kana string, index int) CharHebon {
