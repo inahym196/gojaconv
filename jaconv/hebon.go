@@ -6,13 +6,13 @@ import (
 	"golang.org/x/exp/utf8string"
 )
 
-func ToHebon(kana string) string {
+func ToHebon(kana string) []string {
 	isOmitted := map[string]bool{
 		"aa": false, "ee": false, "ii": false, // i は連続しても省略しない
 		"oo": false, "ou": false, "uu": false,
 	}
 
-	var hebon string
+	var hebon []string
 	var lastHebon string
 
 	i := 0
@@ -27,7 +27,7 @@ func ToHebon(kana string) string {
 		} else if ch.Char == "ん" {
 			ch.Hebon = "n"
 		} else if ch.Char == "ー" {
-			// 長音は無視
+			// 長音は無視しない
 			ch.Hebon = "-"
 		}
 
@@ -63,7 +63,7 @@ func ToHebon(kana string) string {
 
 type CharHebon struct {
 	Char  string
-	Hebon string
+	Hebon []string
 }
 
 func charHebonByIndex(kana string, index int) CharHebon {
